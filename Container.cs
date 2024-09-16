@@ -16,8 +16,14 @@ namespace school1
         {
             if (Capacity <= 0)
             {
+                throw new ArgumentException("Capacity cannot be negative.");
             }
             else { this.Capacity = Capacity; }
+            if (Content <= 0)
+            {
+                throw new ArgumentException("Content cannot be negative.");
+            }
+            else { this.Content = Content; }
         }
         public void Fill(int ammount)
         {
