@@ -8,7 +8,7 @@ namespace school1
 {
     internal class Rainbarrel : Container
     {
-        public Rainbarrel(int a, int b) : base(a, b)
+        public Rainbarrel(int Capacity, int Content) : base(Capacity, Content)
         {
             
         }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace school1
 {
-    internal class Oilbarrel
+    internal class Oilbarrel : Container
     {
+        public Oilbarrel(int Content) : base(159, Content)
+        {
+
+        }
     }
 }

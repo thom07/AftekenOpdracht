@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace school1
 {
-    internal class Bucket
+    internal class Bucket : Container
     {
+        public Bucket(int Capacity, int Content) : base(Capacity, Content)
+        { 
+
+        }
+        public Bucket( int Content) : base(12, Content)
+        {
+
+        }
     }
 }

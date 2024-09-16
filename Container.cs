@@ -18,26 +18,37 @@ namespace school1
             {
                 throw new ArgumentException("Capacity cannot be negative.");
             }
-            else { this.Capacity = Capacity; }
-            if (Content <= 0)
+            
+            if (Content < 0)
             {
                 throw new ArgumentException("Content cannot be negative.");
             }
-            else { this.Content = Content; }
+
+            if (Content > Capacity)
+            {
+                throw new ArgumentException("Content cannot be bigger then capacity.");
+            }
+
+            this.Capacity = Capacity;
+            this.Content = Content;
         }
         public void Fill(int ammount)
         {
-
+                Content += ammount;
         }
 
         public void Empty(int ammount)
         {
-
+            Content -= ammount;
         }
 
         public void EmptyFully()
         {
             Content = 0;
+        }
+        public void ContainerInfo()
+        {
+            Console.WriteLine($"The Capacity is: {Capacity} and the Content is: { Content }");
         }
     }
 }
