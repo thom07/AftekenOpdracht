@@ -26,7 +26,7 @@ namespace school1
 
             if (Content > Capacity)
             {
-                throw new ArgumentException("Content cannot be bigger then capacity.");
+                throw new ArgumentOutOfRangeException("Content cannot be bigger then capacity.");
             }
 
             this.Capacity = Capacity;
